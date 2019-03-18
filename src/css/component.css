@@ -1,0 +1,119 @@
+/* ---Box Response--- */
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+
+.boxResp h1, h2 {
+  font-family: 'Crete Round', serif;
+}
+
+
+.boxResp{
+  background:#343a40;
+  width: 80%;
+  max-width: 960px;
+  min-height: 3.750em; 
+  margin: 2em auto;
+  padding: 1.250em;
+  border-radius: 0.313em;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+  line-height: 1.5em;
+  color: white;
+}
+
+.ribbon{
+  position:relative;
+  padding: 0 0.5em;
+  font-size:2.000em;
+  margin: 0 0 0 -0.625em;
+  line-height: 1.875em;
+  color: #000F2C;
+  border-radius: 0 0.156em 0.156em 0;
+  background: #F999A5;
+  box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+}
+
+.ribbon:before, .ribbon:after{
+  position:absolute;
+  content: '';
+  display: block;
+}
+
+.ribbon:before{
+  width: 0.469em;
+  height: 100%;
+  padding: 0 0 0.438em;
+  top:0;
+  left: -0.469em;
+  background:inherit;
+  border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon:after{
+  width: 0.313em;
+  height: 0.313em;
+  background: rgba(0,0,0,0.35);
+  bottom: -0.313em;
+  left: -0.313em;
+  border-radius: 0.313em 0 0 0.313em;
+  box-shadow: inset -1px 2px 2px rgba(0,0,0,0.3);
+}
+
+/* ---Search box ---- */ 
+.form-search{
+  position: relative;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  /* background: white; */
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+.form-search input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+.form-search:hover{
+  width: 200px;
+  cursor: pointer;
+}
+
+.form-search:hover input{
+  display: block;
+}
+
+.form-search:hover .fa{
+  background: #07051a;
+  color: white;
+}
+

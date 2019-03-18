@@ -1,0 +1,53 @@
+nav .collapse ul li .nav-link, nav .container .navbar-brand span {
+    color: #fff;
+}
+
+nav .collapse ul li .nav-link:hover, nav .container .navbar-brand span:hover {
+    color: #F999A5;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 720px; */
+    margin: 0 50px;
+    /* height: 100vh; */
+    list-style: none;
+  }
+  
+  .menu li {
+    /* width: 125px; */
+    /* height: 50px; */
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+    border-bottom: 2px solid #000F2C;
+  }
+  .menu li .nav-link {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 1s;
+  }
+  .menu li:hover {
+    border-bottom: solid 2px #F999A5;
+    transition: 1s;
+  }
+  .menu li:hover .nav-link {
+    color: #000F2C;
+  }
+  .menu li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  @-webkit-keyframes line {
+    0% {
+      background-position-x: 390px;
+    }
+  }
+  
+  @keyframes line {
+    0% {
+      background-position-x: 390px;
+    }
+  }

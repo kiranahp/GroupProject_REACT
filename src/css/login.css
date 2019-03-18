@@ -1,0 +1,45 @@
+.box{
+    text-align: center;
+    color: #F999A5;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.box input[type = "text"], .box input[type = "password"], .box input[type = "email"]{
+    border: 0;
+    background: none;
+    display: black;
+    text-align: center;
+    border: 2px solid #555f66;
+    /* padding: 14px 20px; */
+    width: 87%;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus, .box input[type = "email"]:focus{
+    width: 95%;
+    border-color: #F999A5;
+}
+
+.box button[type ="submit"]{
+    border: 0;
+    background: none;
+    display: black;
+    text-align: center;
+    border: 2px solid #F999A5;
+    outline: none;
+    color: white;
+    border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.box button[type="submit"]:hover{
+    color: #000F2C;
+    background: #F999A5;
+}
